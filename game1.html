@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game1</title>
+    <link rel="stylesheet" type="text/css" href="game1.css">
+</head>
+<body>
+    <div>
+      <h1 style="justify-self: center;">ROCK PAPER SCISSOR</h1>
+    </div>
+
+
+    <div class="row">
+      <div>
+       <button class="bt1" onclick="
+        let a=1;
+        choice(a)"> <img id="rock" src="rock.png " height="160px"></button>
+      </div>
+      <div style="margin-left: 80px;">
+        <button class="bt1" onclick="
+          let b=2;
+          choice(b)"><img src="paper.png" height="160px"></button>
+      </div>
+      <div style="margin-left: 80px;">
+        <button class="bt1" onclick="
+        let c=3;
+        choice(c)"><img src="scissor.png" height="160px"></button>
+      </div>      
+    </div>
+
+
+    <br><br><br><br>
+   <div class="containerr">
+    <div class="backgg">
+      <div id="img"></div>
+      <div><h1 style="margin-left: 40px;color: white;">HUMAN</h1></div>
+        </div>
+        <div class="vs"><h1>VS</h1>
+          <h4 id="result" style="padding-bottom: 10px;"></h4>
+        </div>
+        <div class="com">
+        <div id="com">
+        </div>
+        <div><h1 style="color: white;padding-left: 30px;">BOT</h1></div>
+        </div>
+   </div>
+
+   <div class="pt">
+    <div><h1>Points Table ( W L T ) :</h1></div>
+    <h1 id="poh"></h1>
+    <h1 id="poc"></h1>
+    <h1 id="tie"></h1>
+   </div>
+
+        <script src="game1.js"></script>
+</body>
+</html>
